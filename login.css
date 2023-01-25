@@ -22,6 +22,9 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .input-container input{
+    font-size:xx-large;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border:0;
     width:100%;
     border-bottom: 1px solid black;

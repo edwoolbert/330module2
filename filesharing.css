@@ -1,0 +1,23 @@
+body{
+    background:lightcyan;
+}
+
+.logout_button{
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+.options_container{
+    display:flex;
+    justify-content: space-between;
+}
+
+.options{
+    background: white;
+    display:flex;
+    flex-direction: column;
+    margin:5%;
+    border-radius: 6px;
+    border: 1px solid black;
+}
