@@ -1,6 +1,51 @@
-.container{
+body{
+    background: lightcyan;
+}
+
+.login-container{
+    background: white;
+    width: 50%;
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    border-radius: 6px;
+    margin:10% auto;
+    
+}
+
+.input-container{
+    padding:5%;
+    text-align: left;
+}
+
+.loginText{
+    padding: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.input-container input{
+    border:0;
+    width:100%;
+    border-bottom: 1px solid black;
+    padding: 5px 1px;
+    outline:none;
+}
+.button-container{
+    width:100%;
+    border-radius: 6px;
+}
+.login-button{
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    background:black;
+    color:white;
+    outline:0;
+    padding:5%;
+    width: 100%;
+    transition: all .4s ease;
+}
+
+.login-button:hover{
+    background: white;
+    color:black;
+    border:2px;
 }
