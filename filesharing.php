@@ -6,7 +6,7 @@
     <body>
         <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
             <p>
-                <input type="submit" name="Loggout" value="Loggout">
+                <input type="submit" name="Loggout" value="Logout">
             </p>
         </form>
 
