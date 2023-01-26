@@ -8,17 +8,17 @@
 
 <body>
     <?php session_start(); ?>
-    <div class="login-container">
+    <div class="login_container">
         <h1 class="loginText">Login</h1>
-        <div class="input-container">
+        <div class="input_container">
             <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
                 <p>
                     <label for="username">Username:</label>
                     <input class="inputs" type="text" name="username" id="username">
                 </p>
         </div>
-        <div class="button-container">
-            <input class="login-button" type="submit" value="Login">
+        <div>
+            <input class="login_button" type="submit" value="Login">
         </div>
         </form>
     </div>
