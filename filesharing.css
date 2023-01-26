@@ -24,7 +24,9 @@ body{
     background:black;
     color:white;
     outline:0;
+    /*Begin citation for https://stackoverflow.com/questions/19469495/css-slow-hover-effect*/
     transition: all .4s ease;
+    /*end citation*/
 }
 
 .filesharing_button:hover{

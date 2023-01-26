@@ -43,7 +43,9 @@ body{
     outline:0;
     padding:5%;
     width: 100%;
+    /*Begin citation for https://stackoverflow.com/questions/19469495/css-slow-hover-effect*/
     transition: all .4s ease;
+    /*end citation*/
 }
 
 .login-button:hover{
