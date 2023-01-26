@@ -2,24 +2,40 @@ body{
     background:lightcyan;
 }
 
-.logout_button{
-    position:absolute;
-    top:0;
-    right:0;
+.header {
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-right: 5%;
+    display: flex;
+}
+
+.header_element {
+    width: 50%;
+}
+
+.logout_button {
+    float: right;
+}
+
+.filesharing_button{
     border: 1px solid transparent;
     border-radius:6px;
     cursor:pointer;
     background:black;
     color:white;
     outline:0;
-    width: 5%;
     transition: all .4s ease;
 }
 
-.logout_button:hover{
+.filesharing_button:hover{
     background: lightcyan;
     color:black;
     border:1px solid black;
+}
+
+.filesharing_label {
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .options_container{
@@ -35,6 +51,10 @@ body{
     outline:none;
 }
 
+.submit_button {
+    padding: 5%;
+}
+
 .options{
     background: white;
     display:flex;
@@ -46,4 +66,9 @@ body{
 
 .inner_div{
     padding: 5%;
+    height: 200px;
+}
+
+.files_list_container {
+    margin-left: 5%;
 }

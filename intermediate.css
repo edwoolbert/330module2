@@ -1,0 +1,44 @@
+body{
+    background:lightcyan;
+}
+
+.header-element {
+    display: inline-block;
+    width: 39%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.return_button{
+    border: 1px solid transparent;
+    border-radius:6px;
+    cursor:pointer;
+    background:black;
+    color:white;
+    outline:0;
+    transition: all .4s ease;
+    float: right;
+}
+
+.return_button:hover{
+    background: lightcyan;
+    color:black;
+    border:1px solid black;
+}
+
+.intermediate_container {
+    background: white;
+    display:flex;
+    flex-direction: column;
+    margin-left:40%;
+    margin-top: 5%;
+    width: 20%;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+.status-container {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    font-size: 20px;
+}
