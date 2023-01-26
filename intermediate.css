@@ -10,12 +10,13 @@ body{
 }
 
 .return_button{
+    /*Begin citation for https://stackoverflow.com/questions/9612758/add-a-css-border-on-hover-without-moving-the-element*/
     border: 1px solid transparent;
+    /*End of citation*/
     border-radius:6px;
     cursor:pointer;
     background:black;
     color:white;
-    outline:0;
     /*Begin citation for https://stackoverflow.com/questions/19469495/css-slow-hover-effect*/
     transition: all .4s ease;
     /*end citation*/

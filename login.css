@@ -27,18 +27,19 @@ body{
     border:0;
     width:100%;
     border-bottom: 1px solid black;
-    padding: 5px 1px;
+    padding: 5px;
     outline:none;
 }
 
 .login_button{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border:none;
     border-bottom-left-radius: 6px;
     border-bottom-left-radius: 6px;
     cursor:pointer;
     background:black;
     color:white;
-    outline:0;
     padding:5%;
     width: 100%;
     /*Begin citation for https://stackoverflow.com/questions/19469495/css-slow-hover-effect*/

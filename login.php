@@ -9,12 +9,12 @@
 <body>
     <?php session_start(); ?>
     <div class="login_container">
-        <h1 class="loginText">Login</h1>
+        <h1 class="loginText">Super Cool File Sharing Website</h1>
         <div class="input_container">
             <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
                 <p>
                     <label for="username">Username:</label>
-                    <input class="inputs" type="text" name="username" id="username">
+                    <input class="inputs" type="text" name="username" id="username" placeholder="Please Enter Your Username">
                 </p>
         </div>
         <div>
