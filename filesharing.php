@@ -25,31 +25,38 @@
     ?>
     <div class="options_container">
         <div class="options">
+            <div class="inner_div">
             <form enctype="multipart/form-data" action="uploader.php" method="POST">
                 <p>
                     <input type="hidden" name="MAX_FILE_SIZE" value="20000000" />
                     <label for="uploadfile_input">Choose a file to upload:</label> <input name="uploadedfile" type="file" id="uploadedfile" />
                 </p>
+                </div>
                 <p>
                     <input type="submit" value="Upload File" />
                 </p>
             </form>
+        
         </div>
         <div class="options">
+            <div class="inner_div">
             <form enctype="multipart/form-data" action="deleter.php" method="POST">
                 <p>
-                    <label for="">Type name of a file to delete:</label> <input name="deletefile" type="text" id="deletefile" />
+                    <label for="">Type name of a file to delete:</label> <input name="deletefile" type="text" id="deletefile" placeholder="Input file name here"/>
                 </p>
+            </div>
                 <p>
                     <input type="submit" value="Delete File" />
                 </p>
             </form>
         </div>
         <div class="options">
+            <div class="inner_div">
             <form enctype="multipart/form-data" action="fileviewer.php" method="POST">
                 <p>
-                    <label for="">Type name of a file to view:</label> <input name="viewfile" type="text" id="viewfile" />
+                    <label for="">Type name of a file to view:</label> <input name="viewfile" type="text" id="viewfile" placeholder="Input file name here" />
                 </p>
+            </div>
                 <p>
                     <input type="submit" value="View File" />
                 </p>
@@ -58,7 +65,7 @@
     </div>
     <?php
     session_start();
-    $userdir = "/srv/module2/" . (@$_SESSION['username']);
+    $userdir = "/srv/module2/".(@$_SESSION['username']);
 
     $filenames = scandir($userdir);
 

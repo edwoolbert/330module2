@@ -31,7 +31,8 @@
         $h = fopen("/srv/module2/users.txt", "r");
 
         while (!feof($h)) {
-            if (trim(fgets($h)) == $username) {
+            $temp = trim(fgets($h));
+            if ($temp == $username && $temp != "") {
                 // Update session variables
                 @$_SESSION['status'] = true;
                 @$_SESSION['username'] = $username;

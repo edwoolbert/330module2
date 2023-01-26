@@ -6,11 +6,33 @@ body{
     position:absolute;
     top:0;
     right:0;
+    border: 1px solid transparent;
+    border-radius:6px;
+    cursor:pointer;
+    background:black;
+    color:white;
+    outline:0;
+    width: 5%;
+    transition: all .4s ease;
+}
+
+.logout_button:hover{
+    background: lightcyan;
+    color:black;
+    border:1px solid black;
 }
 
 .options_container{
     display:flex;
     justify-content: space-between;
+}
+.inner_div input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:0;
+    width:100%;
+    border-bottom: 1px solid black;
+    padding: 5px 1px;
+    outline:none;
 }
 
 .options{
@@ -20,4 +42,8 @@ body{
     margin:5%;
     border-radius: 6px;
     border: 1px solid black;
+}
+
+.inner_div{
+    padding: 5%;
 }

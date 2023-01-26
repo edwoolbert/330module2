@@ -9,7 +9,7 @@ body{
     flex-direction: column;
     border-radius: 6px;
     margin:10% auto;
-    
+    box-shadow: 1px 1px 5px 0px gray;
 }
 
 .input-container{
@@ -23,7 +23,6 @@ body{
 }
 .input-container input{
     font-size:xx-large;
-    letter-spacing: 2px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border:0;
     width:100%;
