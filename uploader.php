@@ -17,33 +17,31 @@
                         </p>
                     </form>
                 </div>
-            <div>
+            </div>
 
             <div class = "status-container">
-            <?php
-                session_start();
+                <?php
+                    session_start();
 
                 // Get the filename and make sure it is valid
                 $filename = basename($_FILES['uploadedfile']['name']);
 
-                if( !preg_match('/^[\w_\.\-]+$/', $filename) ){
-                    echo "Invalid filename";
-                    exit;
-                }
-                
-                // Get the username
-                $username = $_SESSION['username'];
-                
-                $full_path = sprintf("/srv/module2/%s/%s", $username, $filename);
-                
-                if( move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $full_path) ){
-                    printf("<h3>Successfully uploaded file!<h3>");
-                    exit;
+                if (!preg_match('/^[\w_\.\-]+$/', $filename)) {
+                    printf("<p>Invalid filename</p>");
                 } else {
-                    printf("<h3>Failed to upload file!<h3>");
-                    exit;
+
+                    // Get the username
+                    $username = $_SESSION['username'];
+
+                    $full_path = sprintf("/srv/module2/%s/%s", $username, $filename);
+
+                    if (move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $full_path)) {
+                        printf("<h3>Successfully uploaded file!</h3>");
+                    } else {
+                        printf("<h3>Failed to upload file!</h3>");
+                    }
                 }
-            ?>
+                ?>
             </div>
         </div>
     </body>

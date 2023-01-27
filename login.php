@@ -10,18 +10,17 @@
     <?php session_start(); ?>
     <div class="login_container">
         <h1 class="loginText">Super Cool File Sharing Website</h1>
-        <div class="input_container">
-            <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
+        <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
+            <div class="input_container">
                 <p>
                     <label for="username">Username:</label>
                     <input class="inputs" type="text" name="username" id="username" placeholder="Please Enter Your Username">
                 </p>
-        </div>
-        <div>
-            <input class="login_button" type="submit" value="Login">
-        </div>
+            </div>
+            <div>
+                <input class="login_button" type="submit" value="Login">
+            </div>
         </form>
-    </div>
     </div>
     <?php
     // Check that user input something
