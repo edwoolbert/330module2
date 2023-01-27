@@ -24,6 +24,11 @@
                 <div class="status-container">
                     <?php
                     session_start();
+                    if(@$_SESSION['username'] == ""){
+                        session_destroy();
+                        header("Location: login.php");
+                        exit;
+                    }
 
                     // Get the filename and make sure it is valid
                     $filename = (string) $_POST['deletefile'];

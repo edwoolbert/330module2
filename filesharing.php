@@ -11,6 +11,10 @@
         <div class="header_element">
             <?php
             session_start();
+            if(@$_SESSION['username'] == ""){
+                header("Location: login.php");
+                exit;
+            }
             printf("<h1>Hello %s</h1>", @$_SESSION['username']);
 
             if (isset($_POST['Logout'])) {

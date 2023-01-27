@@ -23,6 +23,11 @@
                 <div class="status-container">
                     <?php
                     session_start();
+                    if(@$_SESSION['username'] == ""){
+                        session_destroy();
+                        header("Location: login.php");
+                        exit;
+                    }
 
                     $filename = (string) $_POST['viewfile'];
 
